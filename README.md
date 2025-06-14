@@ -1,2 +1,0 @@
-# CORE
-The CORE Interpreter
