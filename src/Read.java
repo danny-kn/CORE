@@ -44,6 +44,10 @@ public class Read implements Stmt {
 	 * @param - not currently available.
 	 */
 	public void execute() {
+		if (Memory.data == null) {
+			System.out.println("ERROR: no data file provided for read operation!");
+			System.exit(-1); // exit with an error status...
+		}
 		if (Memory.data.currentToken() == Core.EOS) {
 			System.out.println("ERROR: the data file is out of values!");
 			System.exit(-1); // exit with an error status...

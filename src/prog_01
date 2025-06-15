@@ -1,0 +1,6 @@
+procedure main is
+    integer x;
+begin
+    x = 10;
+    print(x);
+end
