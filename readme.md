@@ -1,6 +1,16 @@
-# The CORE Interpreter
+# The CORE Language Interpreter
 
-## The Grammar
+A comprehensive interpreter implementation for the CORE programming language, featuring a complete lexical analyzer, syntax analyzer, and interpreter with memory management capabilities.
+
+## Overview
+
+The CORE Language Interpreter is a Java-based implementation that processes and executes programs written in the CORE programming language. The interpreter consists of multiple phases:
+
+1. **Lexical Analysis (Scanner)** - Tokenizes the input source code.
+2. **Syntax Analysis (Parser)** - Builds an abstract syntax tree and validates syntax.
+3. **Interpretation** - Executes the parsed program with full memory management.
+
+## The CORE Grammar
 
 ```
 <procedure> ::= procedure ID is <decl-seq> begin <stmt-seq> end | procedure ID is begin <stmt-seq> end
@@ -24,3 +34,44 @@
 <factor> ::= id | id [ id ] | const | ( <expr> ) | read ( )
 ```
 
+## Usage
+
+### Compilation
+```bash
+cd src
+javac *.java
+```
+
+### Execution
+
+**For programs without input data:**
+```bash
+java Main <program_file>
+```
+
+**For programs with input data:**
+```bash
+java Main <program_file> <data_file>
+```
+
+### Example Programs
+
+**Simple Program (no input):**
+```core
+procedure main is
+    integer x;
+begin
+    x = 10;
+    print(x);
+end
+```
+
+**Program with Input:**
+```core
+procedure main is
+    integer x;
+begin
+    read(x);
+    print(x + 5);
+end
+```
