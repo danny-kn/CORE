@@ -38,7 +38,7 @@ The CORE Language Interpreter is a Java-based implementation that processes and 
 
 ### Compilation
 ```bash
-cd src
+cd src/
 javac *.java
 ```
 
@@ -56,7 +56,7 @@ java Main <program_file> <data_file>
 
 ### Example Programs
 
-**Simple Program without Input:**
+**Program without Input:**
 ```core
 procedure main is
     integer x;
