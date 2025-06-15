@@ -56,7 +56,7 @@ java Main <program_file> <data_file>
 
 ### Example Programs
 
-**Simple Program (no input):**
+**Simple Program without Input:**
 ```core
 procedure main is
     integer x;
